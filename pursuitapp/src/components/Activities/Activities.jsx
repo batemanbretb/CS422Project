@@ -1,9 +1,17 @@
 import "./Activities.css";
+import { useNavigate } from "react-router-dom";
 
 const Destinations = () => {
+
+  const navigate = useNavigate();
+
+  const handleItemClick = () => {
+    navigate("/Explore", {});
+  };
+
   return (
     <div className="activities">
-      <div className="activities-item">
+      <div className="activities-item" onClick={handleItemClick} >
         <img
           src="https://i.imgur.com/L65Me0D.jpeg"
           alt=""
@@ -15,7 +23,7 @@ const Destinations = () => {
         </div>
       </div>
       
-      <div className="activities-item">
+      <div className="activities-item" onClick={handleItemClick} >
         <img
           src="https://i.imgur.com/Ou2j6Oq.jpeg"
           alt=""
@@ -26,7 +34,7 @@ const Destinations = () => {
           <h2>42 locations</h2>
         </div>
       </div>
-      <div className="activities-item">
+      <div className="activities-item" onClick={handleItemClick} >
         <img
           src="https://i.imgur.com/RleGasv.jpeg"
           alt=""
@@ -37,7 +45,7 @@ const Destinations = () => {
           <h2>17 locations</h2>
         </div>
       </div>
-      <div className="activities-item">
+      <div className="activities-item" onClick={handleItemClick}>
         <img
           src="https://i.imgur.com/lkAn6xv.png"
           alt=""

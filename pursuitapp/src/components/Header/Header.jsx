@@ -5,7 +5,9 @@
   import "react-date-range/dist/theme/default.css"; // theme css file
   import { format } from "date-fns";
   import { useNavigate } from "react-router-dom";
-  import Marker from '../../assets/marker.png';
+  import LocationMarker from '../../assets/location-marker-icon.png';
+  import CalendarIcon from '../../assets/calendar-icon.png';
+  import PeopleIcon from '../../assets/people-icon.png';
   
   const Header = ({ type }) => {
     const [destination, setDestination] = useState("");
@@ -53,7 +55,7 @@
               </h1>
               <div className="headerSearch">
                 <div className="headerSearchItem">
-                  <img className="smallIcon" src={Marker} /> 
+                  <img className="smallIcon" src={LocationMarker} /> 
                   <input
                     type="text"
                     placeholder="Enter a destination"
@@ -62,7 +64,7 @@
                   />
                 </div>
                 <div className="headerSearchItem">
-                  <img className="smallIcon" src={Marker} /> 
+                  <img className="smallIcon" src={CalendarIcon} /> 
                   <span
                     onClick={() => setOpenDate(!openDate)}
                     className="headerSearchText"
@@ -82,7 +84,7 @@
                   )}
                 </div>
                 <div className="headerSearchItem">
-                  <img className="smallIcon" src={Marker} /> 
+                  <img className="smallIcon" src={PeopleIcon} /> 
                   <span
                     onClick={() => setOpenOptions(!openOptions)}
                     className="headerSearchText"

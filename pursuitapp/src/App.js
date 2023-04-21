@@ -7,8 +7,12 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Activity from "./pages/activity/Activity";
 import Explore from "./pages/explore/Explore";
+import Activity from "./pages/activity/Activity";
+import Planning from "./pages/planning/Planning";
+import Confirmation from './pages/confirmation/Confirmation';
+import InstructorInfo from './pages/instructorInfo/InstructorInfo';
+import MyAccount from "./pages/myaccount/MyAccount";
 
 function App() {
   return (
@@ -16,7 +20,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Explore" element={<Explore/>}/>
-        <Route path="/Explore/:id" element={<Activity/>}/>
+        <Route path="/Activity" element={<Activity/>}/>
+        <Route path="/Planning" element={<Planning/>}/>
+        <Route path="/Confirmation" element={<Confirmation/>}/>
+        <Route path="/InstructorInfo" element={<InstructorInfo/>}/>
+        <Route path="/MyAccount" element={<MyAccount/>}/>
       </Routes>
     </BrowserRouter>
   );

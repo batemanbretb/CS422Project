@@ -8,9 +8,11 @@ import "./Home.css"
 const Home = () => {
   return ( 
     <div className="root">
-      <div className="bg-img">
-        <Navbar />
-        <Header />
+      <div className="gradient">
+        <div className="bg-img">
+          <Navbar />
+          <Header />
+        </div>
       </div>
       <div className="list-container">
         <h1 className="home-title">Choose from a world of possibilities</h1>

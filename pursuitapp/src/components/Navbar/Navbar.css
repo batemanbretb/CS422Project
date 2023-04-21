@@ -18,11 +18,21 @@
     font-weight: 550;
     font-size: 50px;
     font-family: 'Caveat';
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;  
+    cursor: pointer;
   }
   
   .navButton{
-    margin-left: 20px;
-    border: none;
-    padding: 5px 10px;
+    font-size: 20px;
+    background:none;
+    border:none;
+    margin:20px;
+    padding:0;  
     cursor: pointer;
+    
   }
+
+ 
